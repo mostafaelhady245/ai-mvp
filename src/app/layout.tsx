@@ -33,6 +33,7 @@ export default function RootLayout({
 
         <footer className="border-t mt-10 py-8 text-center text-sm text-gray-500 bg-white" dir="rtl">
           <div className="flex gap-4 justify-center flex-wrap">
+            <Link href="/submit" className="hover:text-black font-bold text-black">+ اقترح أداتك</Link>
             <Link href="/about" className="hover:text-black">من نحن</Link>
             <Link href="/privacy" className="hover:text-black">سياسة الخصوصية</Link>
             <Link href="/contact" className="hover:text-black">اتصل بنا</Link>

@@ -4,7 +4,7 @@ import { tools } from './data/tools'
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://ai-mvp-coral.vercel.app'
 
-    const staticPages = ['', '/about', '/privacy', '/contact', '/terms'].map((route) => ({
+    const staticPages = ['', '/about', '/privacy', '/contact', '/terms', '/submit'].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
