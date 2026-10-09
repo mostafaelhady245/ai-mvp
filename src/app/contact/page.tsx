@@ -36,7 +36,7 @@ export default function ContactPage() {
             )}
 
             <div className="mt-8 text-center text-sm text-gray-400">
-                <p>أو راسلنا مباشرة على: support@dalil-ai.com</p>
+                <p>أو راسلنا مباشرة على: almostafaalhady913@gmail.com</p>
             </div>
         </div>
     );
