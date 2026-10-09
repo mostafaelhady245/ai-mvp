@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { tools } from "./data/tools";
 import Link from "next/link";
 import { useLang } from "./context/LanguageContext";
@@ -7,6 +7,10 @@ export default function Home() {
   const { lang, t } = useLang();
   const [q, setQ] = useState("");
   const [cat, setCat] = useState(t.all);
+
+  useEffect(() => {
+    setCat(t.all);
+  }, [lang, t.all]);
 
   const categories_en = ["All", "Writing", "Image", "Video", "Voice", "Marketing", "Coding"];
   const categories_ar = ["الكل", "كتابة", "صور", "فيديو", "صوت", "تسويق", "برمجة"];
