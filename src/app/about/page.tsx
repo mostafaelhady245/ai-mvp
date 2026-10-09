@@ -1,4 +1,4 @@
-"export const metadata";
+"use client";
 import Link from "next/link";
 import { useLang } from "../context/LanguageContext";
 export default function AboutPage() {
