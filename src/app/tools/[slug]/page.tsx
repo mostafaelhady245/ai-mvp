@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useLang } from "../../context/LanguageContext";
 
-export const dynamic = 'force-dynamic';
 
 function ToolContent() {
     const { slug } = useParams();
